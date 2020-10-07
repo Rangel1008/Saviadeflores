@@ -25,8 +25,8 @@
       }
       
       header div img {
-          width: 40rem;
-          height: 40rem;
+          width: 30rem;
+          height: 30rem;
       }
       
       #navbar {
@@ -34,6 +34,7 @@
           justify-content: center;
           align-items: center;
           display: inline-flex;
+          background-color: #851aa6;
       }
       
       nav {
@@ -43,7 +44,7 @@
       }
       
       nav ul li a {
-          color: #851aa6;
+          color: white;
           text-decoration: none;
       }
       
@@ -82,7 +83,7 @@
           color: #8624A9;
           text-align: center;
           font-size: 4.5rem;
-          margin: 1rem 1rem 1rem 1rem;
+          margin: 1rem 1rem 8rem 1rem;
       }
       
       h3 {
@@ -143,6 +144,61 @@
           color: #851aa6;
           font-size: 2rem;
           font-family: 'Josefin Sans', sans-serif;
+      }
+      
+      table th td {
+          border: 0.2rem solid purple;
+          border-collapse: collapse;
+      }
+      
+      .gridContainer {
+          display: grid;
+          grid-template-columns: 1.2fr 1.2fr 1.2fr;
+          grid-template-rows: 1fr;
+          gap: 10px 10px;
+          grid-template-areas: "card card card";
+          justify-items: center;
+      }
+      
+      .gridContainer .card {
+          font-size: 2rem;
+          color: #851aa6;
+          border: 0.3rem solid #851aa6;
+          background-color: white;
+          box-shadow: 1px 1px 12px #851aa6;
+          border-radius: 1rem;
+          transition: 0.3s;
+      }
+      
+      .gridContainer div p {
+          text-align: center;
+          font-size: 2.5rem;
+      }
+      
+      hr {
+          border: 0.1rem solid #851aa6;
+      }
+      
+      .cardIngredientes {
+          list-style: none;
+          text-align: left;
+          padding: 0rem 1.5rem 0rem 1.5rem;
+      }
+      
+      .cardBeneficios {
+          color: white;
+          background-color: #851aa6;
+          list-style: none;
+          text-align: left;
+          padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+      }
+      
+      .card:hover {
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+      }
+      
+      .gridContainer .card p {
+          padding: 0rem 1rem 0rem 1rem;
       }
       
       #mapa {
