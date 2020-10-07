@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="estilo/estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c5eed103d8.js" crossorigin="anonymous"></script>
+    <title>Contáctenos</title>
+</head>
+
+<body>
+    <div id="contenedor">
+        <header>
+
+            <div id="logo">
+                <a href="index.html">
+                    <img src="imagenes/saviadeflores.jpeg" alt="inicio">
+                </a>
+            </div>
+            <div id="subTitulo">
+                <h2>Tienda Herbolaria Planetaria</h2>
+                <h2>Tarotista</h2>
+            </div>
+
+        </header>
+        <nav id="navbar">
+            <ul>
+                <li><a href="index.html">Home -</a> </li>
+                <li><a href="encuentranos.html">Donde Encontrarnos -</a></li>
+                <li> <a href="productos.html">Nuestros Productos -</a></li>
+                <li> <a href="contactenos.html">Contáctenos -</a> </li>
+                <li> <a href="tarot.html">Tarot</a>
+                    <ul>
+                        <li>
+                            <a href="subItem1">Sub Item 1</a></li>
+                        <li>
+                            <a href="subItem2">Sub Item 2</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <br>
+        <h3 id="h3Tarot">Formulario</h3>
+        <p id="comentario">Dejanos acá tu duda que nos queremos comunicar con vos para ayudarte.</p>
+        <br>
+        <main id="mainTarot">
+            <div>
+                <form action="#">
+                    <fieldset>
+                        <legend>Formulario</legend>
+
+                        <p>
+                            <label for="Nombre">Nombre*</label>
+                            <input type="text" placeholder="Nombre" name="Nombre">
+                        </p>
+
+                        <p>
+                            <label for="email" required>Email*</label>
+                            <input type="email" placeholder="Email" name="email">
+                        </p>
+
+                        <p>
+                            <label for="mensaje">Mensaje (opcional)</label><br />
+                            <textarea name="mensaje" cols="30" rows="10" required></textarea>
+                        </p>
+
+                        <p>
+                            <input type="checkbox" id="novedades" value="yes">
+                            <label for="novedades">Desea recibir nuestras novedades?</label>
+                        </p>
+
+                        <p>
+                            <input type="submit" value="Enviar Formulario" />
+                            <input type="reset" value="Borrar Formulario" />
+                        </p>
+
+                    </fieldset>
+                </form>
+            </div>
+            <div>
+
+                <img class="cartas" src="imagenes/cartas3.jpeg" alt="cartasMesa" height="380rem" width="350rem">
+
+            </div>
+        </main>
+        <br>
+        <br>
+        <footer>
+            <div class="secciones">
+
+                <a href="index.html">Home -</a>
+                <a href="encuentranos.html">Donde Encontrarnos -</a>
+                <a href="productos.html">Nuestros Productos -</a>
+                <a href="contactenos.html">Contáctenos -</a>
+                <a href="tarot.html">Tarot</a>
+
+            </div>
+
+            <div class="redes">
+
+                <a href="facebook">Facebook
+                    <i class="fab fa-facebook-square"></i></a>
+                <a href="instagram">-Instagram
+                    <i class="fab fa-instagram"></i></a>
+
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
