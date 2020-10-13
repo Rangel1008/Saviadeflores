@@ -96,24 +96,20 @@ h3 {
 }
 
 #textosInicio {
+    display: flex;
     color: #851aa6;
     font-size: 2rem;
     word-spacing: 0.2rem;
-    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+    margin: 2rem 2rem 2rem 2rem;
+    padding: 1.5rem 6rem 1.5rem 6rem;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 300;
-    display: flex;
-    justify-content: space-evenly;
     flex-flow: row nowrap;
 }
 
 #bienvenido {
     text-align: center;
     display: block;
-}
-
-.texto_inicio1 {
-    float: left;
 }
 
 #direccion {
