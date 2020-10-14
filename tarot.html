@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="estilo/estilo.css">
     <script src="https://kit.fontawesome.com/c5eed103d8.js" crossorigin="anonymous"></script>
     <title>Tarot</title>
@@ -14,8 +14,8 @@
 
 <body>
     <div id="contenedor">
-        <header class="animate__animated animate__fadeIn col-lg-12 ">
 
+        <header class="animate__animated animate__fadeIn col-lg-12 col-md-12 col-sm-12 ">
             <div id="logo">
                 <a href="index.html">
                     <img src="imagenes/saviadeflores.jpeg" alt="inicio">
@@ -23,12 +23,11 @@
             </div>
             <div id="subTitulo">
                 <h1>Herbolaria Planetaria</h1>
-
             </div>
-
         </header>
-        <nav id="navbar">
-            <ul class="listaNav">
+
+        <nav id="navbar" class="col-lg-12 col-md-12 col-sm-12">
+            <ul id="listaNav">
                 <li><a href="index.html">Home</a> </li>
                 <li><a href="encuentranos.html">Dónde Encontrarnos</a></li>
                 <li><a href="productos.html">Nuestros Productos</a></li>
@@ -36,45 +35,48 @@
                 <li><a href="tarot.html">Tarot</a></li>
             </ul>
         </nav>
-        <main>
-            <h2 class="h2Margin">Tarot</h2>
 
-            <div class="gridTarot">
+        <main class="row">
+            <h2 class="h2Margin col-lg-12 col-md-12 col-sm-12">Tarot</h2>
+
+            <div class="gridTarot col-lg-12 col-md-12">
                 <img class="cartas" id="cartaAbanico" src="imagenes/cartas.jpeg" alt="cartasAbanico" height="400rem" width="350rem">
                 <img class="cartas" id="cartaMano" src="imagenes/cartas2.jpeg" alt="cartasMano" height="400rem" width="350rem">
                 <img class="cartas" id="cartaMesa" src="imagenes/cartas3.jpeg" alt="cartasMesa" height="400rem" width="350rem">
             </div>
 
-            <div id="infoTarot">
 
-                <article>
-                    <p class="titulosTarot">Que tipo de tarot realizamos?</p>
-                    <p class="textosTarot">Nos especializamos en el tarot evolutivo, una herramienta terapéutica basada en la lectura del tarot que permite conocer y descubrir nuestro potencial humano y espiritual para poder resolver aquello que nos bloquea y evolucionar de
-                        mejor manera con nuestras circunstancias de realización, integración y equilibrio personal. Es una forma de leer el tarot para tratar y resolver conflictos personales desde nuestro interior, hacia el autoconocimiento y la evolución
-                        de la conciencia.
-                    </p>
-                </article>
-                <article>
-                    <p class="titulosTarot">Beneficios:</p>
-                    <p class="textosTarot">Entender que el destino se puede cambiar y no es un patrón fijo, podemos intervenir modificándolo y ser participantes activos y constructivos de nuestro día a día. <br> Saber en qué punto estamos para alcanzar nuestros objetivos. Conocer
-                        nuestra evolución como seres humanos y con ello poder avanzar en conciencia.<br> Aprender a reconocer debilidades y fortalezas, defectos y dones para poder canalizarlos y aplicarlos con inteligencia en nuestra vida diaria.<br>                        Saber nuestra responsabilidad y como ella afecta nuestras decisiones.<br> Indagar en el subconsciente para develar los bloqueos o patrones mentales que obstaculizan nuestro avanzar en la vida.<br> Soltar lo que ya no sirve, lo
-                        viejo, lo que nos hace daño.<br> Recordar las claves y mensajes que tiene el universo. </p>
+            <article class="col-lg-12 col-md-4 col-sm-12">
+                <p class="titulosTarot">Que tipo de tarot realizamos?</p>
+                <p class="textosTarot">Nos especializamos en el tarot evolutivo, una herramienta terapéutica basada en la lectura del tarot que permite conocer y descubrir nuestro potencial humano y espiritual para poder resolver aquello que nos bloquea y evolucionar de mejor
+                    manera con nuestras circunstancias de realización, integración y equilibrio personal. Es una forma de leer el tarot para tratar y resolver conflictos personales desde nuestro interior, hacia el autoconocimiento y la evolución de la
+                    conciencia.
+                </p>
+            </article>
 
-                </article>
-                <article>
-                    <p class="titulosTarot">Nuestros Precios:</p>
-                    <ul id="listaTarot">
-                        <li>General ..... AR$ 630</li>
-                        <li>Especial Vinculos ..... AR$ 510</li>
-                        <li>3 Preguntas ..... AR$ 420</li>
-                        <li>1 Pregunta ..... AR$ 180</li>
-                    </ul>
-                </article>
-            </div>
+            <article class="col-lg-12 col-md-4 col-sm-12">
+                <p class="titulosTarot">Beneficios:</p>
+                <p class="textosTarot">Entender que el destino se puede cambiar y no es un patrón fijo, podemos intervenir modificándolo y ser participantes activos y constructivos de nuestro día a día. <br> Saber en qué punto estamos para alcanzar nuestros objetivos. Conocer
+                    nuestra evolución como seres humanos y con ello poder avanzar en conciencia.<br> Aprender a reconocer debilidades y fortalezas, defectos y dones para poder canalizarlos y aplicarlos con inteligencia en nuestra vida diaria.<br> Saber
+                    nuestra responsabilidad y como ella afecta nuestras decisiones.<br> Indagar en el subconsciente para develar los bloqueos o patrones mentales que obstaculizan nuestro avanzar en la vida.<br> Soltar lo que ya no sirve, lo viejo, lo
+                    que nos hace daño.<br> Recordar las claves y mensajes que tiene el universo. </p>
+            </article>
+
+            <article class="col-lg-12 col-md-4 col-sm-12">
+                <p class="titulosTarot">Nuestros Precios:</p>
+                <ul id="listaTarot">
+                    <li>General ..... AR$ 630</li>
+                    <li>Especial Vinculos ..... AR$ 510</li>
+                    <li>3 Preguntas ..... AR$ 420</li>
+                    <li>1 Pregunta ..... AR$ 180</li>
+                </ul>
+            </article>
+
+
         </main>
         <br>
         <br>
-        <footer>
+        <footer class="col-lg-12 col-md-12 col-sm-12">
             <div class="secciones">
 
                 <a href="index.html">Home</a>
@@ -96,6 +98,8 @@
             </div>
         </footer>
     </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.3/js/bootstrap.bundle.min.js " integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx " crossorigin="anonymous "></script>
 
 </body>
 

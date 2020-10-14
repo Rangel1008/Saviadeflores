@@ -1,17 +1,20 @@
 html {
     font-size: 62.5%;
     box-sizing: border-box;
+    margin: 2rem;
+    padding: 1rem;
 }
 
 body {
     font-family: 'Amatic SC';
     background-color: #fef6eb;
     font-weight: 400;
+    width: 100%;
 }
 
 #contenedor {
-    width: 100%;
-    height: 100%;
+    /* width: 100%;
+    height: 100%;*/
     display: flex;
     flex-flow: column wrap;
     justify-content: space-evenly;
@@ -36,23 +39,25 @@ header div img {
 #navbar {
     margin: 2rem 2rem 2rem 2rem;
     justify-content: center;
-    align-items: center;
-    display: inline-flex;
+    align-items: baseline;
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
     background: linear-gradient(to right, rgba(254, 246, 235, 1) 0%, rgba(254, 246, 235, 1) 8%, rgba(203, 56, 220, 1) 33%, rgba(142, 32, 179, 1) 50%, rgba(203, 56, 220, 1) 74%, rgba(254, 246, 235, 1) 93%, rgba(254, 246, 235, 1) 100%);
 }
 
-nav {
-    text-align: center;
-    border-radius: 1rem;
+#listaNav {
+    padding: 1rem 1rem 1rem 1rem;
+    margin: 0rem 0rem 0rem 0rem;
 }
 
-nav ul li a {
+#navbar #listaNav li a {
     padding: 0rem 1rem 0rem 1rem;
     color: white;
     text-decoration: none;
 }
 
-nav ul li {
+#navbar #listaNav li {
     list-style: none;
     font-size: 2.3rem;
     display: inline-flex;
@@ -60,16 +65,7 @@ nav ul li {
     text-align: center;
 }
 
-ul ul {
-    position: absolute;
-    display: none;
-}
-
-ul ul li {
-    display: block;
-}
-
-.listaNav li:hover {
+#listaNav li:hover {
     transform: scale(1.1);
 }
 
@@ -213,15 +209,26 @@ fieldset {
     text-align: center;
 }
 
-#infoTarot {
+
+/*#infoTarot {
     margin-top: 2rem;
     display: flex;
     flex-flow: wrap column;
-}
+}*/
 
 .titulosTarot {
     color: #ea71ff;
     font-size: 3rem;
+}
+
+.textosTarot {
+    margin: 2rem 2rem 2rem 2rem;
+    padding: 1rem 1rem 1rem 1rem;
+    color: #851aa6;
+    font-size: 2rem;
+    word-spacing: 0.2rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
 }
 
 .gridTarot {
@@ -231,6 +238,8 @@ fieldset {
     gap: 0px 17px;
     grid-template-areas: ". . .";
     justify-items: center;
+    margin: 2rem 2rem 4rem 2rem;
+    padding: 1rem 1rem 1rem 1rem;
 }
 
 .gridTarot .cartas {
@@ -250,14 +259,6 @@ div .cartas {
     padding: 2rem 2rem 2rem 2rem;
     border: solid #851aa6 0.2rem;
     border-radius: 1rem;
-}
-
-.textosTarot {
-    color: #851aa6;
-    font-size: 2rem;
-    word-spacing: 0.2rem;
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 300;
 }
 
 #derechosReservados {
