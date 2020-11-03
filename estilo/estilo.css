@@ -13,8 +13,6 @@
     }
     
     #contenedor {
-        /* width: 100%;
-    height: 100%;*/
         display: flex;
         flex-flow: column wrap;
         justify-content: space-evenly;
@@ -67,6 +65,7 @@
     
     #listaNav li:hover {
         transform: scale(1.1);
+        color: blue;
     }
     
     h1 {
@@ -108,10 +107,6 @@
         display: block;
     }
     
-    .texto_inicio1 {
-        float: left;
-    }
-    
     #direccion {
         text-align: center;
         color: #851aa6;
@@ -119,22 +114,8 @@
         font-family: 'Josefin Sans', sans-serif;
     }
     
-    #mainTarot {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-evenly;
-    }
-    
     .h2Margin {
         margin: 1rem 1rem 6rem 1rem;
-    }
-    
-    #carouselExampleIndicators {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 2rem 2rem 2rem 2rem;
-        padding: 1rem 1rem 1rem 1rem;
     }
     
     .carousel-inner img {
@@ -142,7 +123,14 @@
         max-width: 60rem;
     }
     
-    .gridContainer {
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        background-color: rgba(0, 0, 0, 0.3);
+        border-radius: 50%;
+        border: 1px solid black;
+    }
+    
+    #gridContainer {
         display: grid;
         grid-template-columns: 1.2fr 1.2fr 1.2fr;
         grid-template-rows: 1fr;
@@ -151,7 +139,7 @@
         justify-items: center;
     }
     
-    .gridContainer .card {
+    #gridContainer #card {
         font-size: 2rem;
         color: #851aa6;
         border: 0.3rem solid #851aa6;
@@ -161,12 +149,12 @@
         transition: 0.3s;
     }
     
-    .gridContainer div p {
+    #gridContainer div p {
         text-align: center;
         font-size: 2.5rem;
     }
     
-    .gridContainer div ul {
+    #gridContainer div ul {
         font-family: 'Josefin Sans', sans-serif;
     }
     
@@ -188,11 +176,11 @@
         padding: 1.5rem 1.5rem 1.5rem 1.5rem;
     }
     
-    .card:hover {
+    #card:hover {
         box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     }
     
-    .gridContainer .card p {
+    #gridContainer #card p {
         padding: 0rem 1rem 0rem 1rem;
     }
     
@@ -206,12 +194,30 @@
         margin: auto;
     }
     
-    fieldset {
+    #mainTarot {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+    
+    #formulario {
         color: #851aa6;
         font-size: 2rem;
         border: solid #851aa6 0.2rem;
         border-radius: 1rem;
         font-family: 'Josefin Sans', sans-serif;
+        margin: 2rem 2rem 2rem 2rem;
+        padding: 2rem 2rem 2rem 2rem;
+    }
+    
+    .formularioInput {
+        border: solid #851aa6 0.2rem;
+    }
+    
+    .formularioSubmit {
+        color: white;
+        background-color: #851aa6;
+        font-family: 'Amatic SC';
     }
     
     #comentario {
@@ -220,15 +226,15 @@
         font-family: 'Josefin Sans', sans-serif;
         text-align: center;
     }
-    /*#infoTarot {
-    margin-top: 2rem;
-    display: flex;
-    flex-flow: wrap column;
-}*/
     
     .titulosTarot {
-        color: #ea71ff;
+        margin: 1rem 1rem 1rem 1rem;
+        padding: 0.5rem 1rem 0.5rem 1rem;
+        color: white;
         font-size: 3rem;
+        background-color: #851aa6;
+        width: fit-content;
+        ;
     }
     
     .textosTarot {
@@ -241,34 +247,30 @@
         font-weight: 300;
     }
     
-    .gridTarot {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
-        gap: 0px 17px;
-        grid-template-areas: ". . .";
-        justify-items: center;
-        margin: 2rem 2rem 4rem 2rem;
-        padding: 1rem 1rem 1rem 1rem;
+    #triggerModal {
+        font-size: 2rem;
+        background-color: #851aa6;
     }
     
-    .gridTarot .cartas {
-        background-color: white;
-        border: 0.3rem solid #851aa6;
-        background-color: white;
-        border-radius: 1rem;
-        transition: 0.3s;
+    .modal-header {
+        color: white;
+        background-color: #851aa6;
     }
     
-    .cartas:hover {
-        transform: scale(1.05);
+    .modal-title {
+        font-size: 3rem;
+        color: white;
     }
     
-    div .cartas {
-        margin: 1rem 1rem 1rem 1rem;
-        padding: 2rem 2rem 2rem 2rem;
-        border: solid #851aa6 0.2rem;
-        border-radius: 1rem;
+    .modal-body {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 2rem;
+    }
+    
+    .modal-footer a {
+        font-size: 2rem;
+        color: white;
+        background-color: #851aa6;
     }
     
     #derechosReservados {
