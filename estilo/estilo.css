@@ -1,324 +1,303 @@
-    html {
-        font-size: 62.5%;
-        box-sizing: border-box;
-        margin: 2rem;
-        padding: 1rem;
-    }
-    
-    body {
-        font-family: 'Amatic SC';
-        background-color: #fef6eb;
-        font-weight: 400;
-        width: 100%;
-    }
-    
-    #contenedor {
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: space-evenly;
-    }
-    
-    header {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-    
-    .animate__animated .animate__fadeIn {
-        --animate-duration: 8s;
-    }
-    
-    header div img {
-        width: 30rem;
-        height: 30rem;
-    }
-    
-    #navbar {
-        margin: 2rem 2rem 2rem 2rem;
-        justify-content: center;
-        align-items: baseline;
-        display: flex;
-        flex-flow: row wrap;
-        text-align: center;
-        background: linear-gradient(to right, rgba(254, 246, 235, 1) 0%, rgba(254, 246, 235, 1) 8%, rgba(203, 56, 220, 1) 33%, rgba(142, 32, 179, 1) 50%, rgba(203, 56, 220, 1) 74%, rgba(254, 246, 235, 1) 93%, rgba(254, 246, 235, 1) 100%);
-    }
-    
-    #listaNav {
-        padding: 1rem 1rem 1rem 1rem;
-        margin: 0rem 0rem 0rem 0rem;
-    }
-    
-    #navbar #listaNav li a {
-        padding: 0rem 1rem 0rem 1rem;
-        color: white;
-        text-decoration: none;
-    }
-    
-    #navbar #listaNav li {
-        list-style: none;
-        font-size: 2.3rem;
-        display: inline-flex;
-        flex-flow: row wrap;
-        text-align: center;
-    }
-    
-    #listaNav li:hover {
-        transform: scale(1.1);
-        color: blue;
-    }
-    
-    h1 {
-        text-align: center;
-        color: #851aa6;
-        font-size: 5.5rem;
-    }
-    
-    h2 {
-        color: #8624A9;
-        text-align: center;
-        font-size: 4.5rem;
-        margin: 1rem 1rem 1rem 1rem;
-    }
-    
-    h3 {
-        color: #851aa6;
-        text-align: left;
-        font-size: 4rem;
-        letter-spacing: 5px;
-        margin: inherit;
-        display: flex;
-    }
-    
-    #textosInicio {
-        color: #851aa6;
-        font-size: 2rem;
-        word-spacing: 0.2rem;
-        padding: 1.5rem 1.5rem 1.5rem 1.5rem;
-        font-family: 'Josefin Sans', sans-serif;
-        font-weight: 300;
-        display: flex;
-        justify-content: space-evenly;
-        flex-flow: row nowrap;
-    }
-    
-    #bienvenido {
-        text-align: center;
-        display: block;
-    }
-    
-    #direccion {
-        text-align: center;
-        color: #851aa6;
-        font-size: 2rem;
-        font-family: 'Josefin Sans', sans-serif;
-    }
-    
-    .h2Margin {
-        margin: 1rem 1rem 6rem 1rem;
-    }
-    
-    .carousel-inner img {
-        max-height: 50rem;
-        max-width: 60rem;
-    }
-    
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-        background-color: rgba(0, 0, 0, 0.3);
-        border-radius: 50%;
-        border: 1px solid black;
-    }
-    
-    #gridContainer {
-        display: grid;
-        grid-template-columns: 1.2fr 1.2fr 1.2fr;
-        grid-template-rows: 1fr;
-        gap: 10px 10px;
-        grid-template-areas: "card card card";
-        justify-items: center;
-    }
-    
-    #gridContainer #card {
-        font-size: 2rem;
-        color: #851aa6;
-        border: 0.3rem solid #851aa6;
-        background-color: white;
-        box-shadow: 1px 1px 12px #851aa6;
-        border-radius: 1rem;
-        transition: 0.3s;
-    }
-    
-    #gridContainer div p {
-        text-align: center;
-        font-size: 2.5rem;
-    }
-    
-    #gridContainer div ul {
-        font-family: 'Josefin Sans', sans-serif;
-    }
-    
-    hr {
-        border: 0.1rem solid #851aa6;
-    }
-    
-    .cardIngredientes {
-        list-style: none;
-        text-align: left;
-        padding: 0rem 1.5rem 0rem 1.5rem;
-    }
-    
-    .cardBeneficios {
-        color: white;
-        background-color: #851aa6;
-        list-style: none;
-        text-align: left;
-        padding: 1.5rem 1.5rem 1.5rem 1.5rem;
-    }
-    
-    #card:hover {
-        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-    }
-    
-    #gridContainer #card p {
-        padding: 0rem 1rem 0rem 1rem;
-    }
-    
-    #mapa {
-        display: block;
-        margin: auto;
-    }
-    
-    img {
-        display: block;
-        margin: auto;
-    }
-    
-    #mainTarot {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-evenly;
-    }
-    
-    #formulario {
-        color: #851aa6;
-        font-size: 2rem;
-        border: solid #851aa6 0.2rem;
-        border-radius: 1rem;
-        font-family: 'Josefin Sans', sans-serif;
-        margin: 2rem 2rem 2rem 2rem;
-        padding: 2rem 2rem 2rem 2rem;
-    }
-    
-    .formularioInput {
-        border: solid #851aa6 0.2rem;
-    }
-    
-    .formularioSubmit {
-        color: white;
-        background-color: #851aa6;
-        font-family: 'Amatic SC';
-    }
-    
-    #comentario {
-        color: #851aa6;
-        font-size: 2rem;
-        font-family: 'Josefin Sans', sans-serif;
-        text-align: center;
-    }
-    
-    .titulosTarot {
-        margin: 1rem 1rem 1rem 1rem;
-        padding: 0.5rem 1rem 0.5rem 1rem;
-        color: white;
-        font-size: 3rem;
-        background-color: #851aa6;
-        width: fit-content;
-        ;
-    }
-    
-    .textosTarot {
-        margin: 2rem 2rem 2rem 2rem;
-        padding: 1rem 1rem 1rem 1rem;
-        color: #851aa6;
-        font-size: 2rem;
-        word-spacing: 0.2rem;
-        font-family: 'Josefin Sans', sans-serif;
-        font-weight: 300;
-    }
-    
-    #triggerModal {
-        font-size: 2rem;
-        background-color: #851aa6;
-    }
-    
-    .modal-header {
-        color: white;
-        background-color: #851aa6;
-    }
-    
-    .modal-title {
-        font-size: 3rem;
-        color: white;
-    }
-    
-    .modal-body {
-        font-family: 'Josefin Sans', sans-serif;
-        font-size: 2rem;
-    }
-    
-    .modal-footer a {
-        font-size: 2rem;
-        color: white;
-        background-color: #851aa6;
-    }
-    
-    #derechosReservados {
-        color: #ea71ff;
-        text-align: center;
-        font-size: 2.5rem;
-    }
-    
-    #listaTarot {
-        color: #851aa6;
-        font-size: 2rem;
-        word-spacing: 0.2rem;
-        font-family: 'Josefin Sans', sans-serif;
-        font-weight: 300;
-    }
-    
-    footer {
-        display: flex;
-        flex-flow: row wrap;
-        flex-basis: 100%;
-        justify-content: space-between;
-        list-style: none;
-        font-size: 2rem;
-        align-items: baseline;
-        text-align: center;
-        margin: 5rem 2rem 2rem 2rem;
-        border: solid #851aa6 0.2rem;
-        border-radius: 1rem;
-    }
-    
-    footer .secciones {
-        margin: 1rem 1rem 1rem 1rem;
-        padding: 0.5rem 0.5rem 0.5rem 0.5rem;
-    }
-    
-    footer .secciones a {
-        padding: 0.5rem 0.5rem 0.5rem 0.5rem;
-        text-decoration: none;
-        color: #851aa6;
-    }
-    
-    footer .redes {
-        margin: 1rem 1rem 1rem 1rem;
-        padding: 0.5rem 0.5rem 0.5rem 0.5rem;
-    }
-    
-    footer .redes a {
-        padding: 0.5rem 0.5rem 0.5rem 0.5rem;
-        text-decoration: none;
-        color: #851aa6;
-    }
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Amatic SC';
+    background-color: #fef6eb;
+    font-weight: 400;
+}
+
+#contenedor {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+}
+
+header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.animate__animated .animate__fadeIn {
+    --animate-duration: 8s;
+}
+
+header div img {
+    width: 30rem;
+    height: 30rem;
+}
+
+#navbar {
+    margin: 2rem 2rem 4rem 2rem;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    background: linear-gradient(to right, rgba(254, 246, 235, 1) 0%, rgba(254, 246, 235, 1) 8%, rgba(203, 56, 220, 1) 33%, rgba(142, 32, 179, 1) 50%, rgba(203, 56, 220, 1) 74%, rgba(254, 246, 235, 1) 93%, rgba(254, 246, 235, 1) 100%);
+}
+
+nav {
+    text-align: center;
+    border-radius: 1rem;
+}
+
+nav ul li a {
+    padding: 0rem 1rem 0rem 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li {
+    list-style: none;
+    font-size: 2.3rem;
+    display: inline-flex;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+ul ul {
+    position: absolute;
+    display: none;
+}
+
+ul ul li {
+    display: block;
+}
+
+.listaNav li:hover {
+    transform: scale(1.1);
+}
+
+h1 {
+    text-align: center;
+    color: #851aa6;
+    font-size: 5.5rem;
+}
+
+h2 {
+    color: #8624A9;
+    text-align: center;
+    font-size: 4.5rem;
+    margin: 1rem 1rem 1rem 1rem;
+}
+
+h3 {
+    color: #851aa6;
+    text-align: left;
+    font-size: 4rem;
+    letter-spacing: 5px;
+    margin: inherit;
+    display: flex;
+}
+
+#textosInicio {
+    display: flex;
+    color: #851aa6;
+    font-size: 2rem;
+    word-spacing: 0.2rem;
+    margin: 2rem 2rem 2rem 2rem;
+    padding: 1.5rem 6rem 1.5rem 6rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    flex-flow: row nowrap;
+}
+
+#bienvenido {
+    text-align: center;
+    display: block;
+}
+
+#direccion {
+    text-align: center;
+    color: #851aa6;
+    font-size: 2rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.h2Margin {
+    margin: 1rem 1rem 8rem 1rem;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: 1.2fr 1.2fr 1.2fr;
+    grid-template-rows: 1fr;
+    gap: 10px 10px;
+    grid-template-areas: "card card card";
+    justify-items: center;
+}
+
+.gridContainer .card {
+    font-size: 2rem;
+    color: #851aa6;
+    border: 0.3rem solid #851aa6;
+    background-color: white;
+    box-shadow: 1px 1px 12px #851aa6;
+    border-radius: 1rem;
+    transition: 0.3s;
+}
+
+.gridContainer div p {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+hr {
+    border: 0.1rem solid #851aa6;
+}
+
+.cardIngredientes {
+    list-style: none;
+    text-align: left;
+    padding: 0rem 1.5rem 0rem 1.5rem;
+}
+
+.cardBeneficios {
+    color: white;
+    background-color: #851aa6;
+    list-style: none;
+    text-align: left;
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.gridContainer .card p {
+    padding: 0rem 1rem 0rem 1rem;
+}
+
+#mapa {
+    display: block;
+    margin: auto;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+#mainTarot {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    flex-basis: 100%;
+}
+
+fieldset {
+    color: #851aa6;
+    font-size: 2rem;
+    border: solid #851aa6 0.2rem;
+    border-radius: 1rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#comentario {
+    color: #851aa6;
+    font-size: 2rem;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+}
+
+#infoTarot {
+    margin-top: 2rem;
+    display: flex;
+    flex-flow: wrap column;
+}
+
+.titulosTarot {
+    color: #ea71ff;
+    font-size: 3rem;
+}
+
+.gridTarot {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 17px;
+    grid-template-areas: ". . .";
+    justify-items: center;
+}
+
+.gridTarot .cartas {
+    background-color: white;
+    border: 0.3rem solid #851aa6;
+    background-color: white;
+    border-radius: 1rem;
+    transition: 0.3s;
+}
+
+.cartas:hover {
+    transform: scale(1.05);
+}
+
+div .cartas {
+    margin: 1rem 1rem 1rem 1rem;
+    padding: 2rem 2rem 2rem 2rem;
+    border: solid #851aa6 0.2rem;
+    border-radius: 1rem;
+}
+
+.textosTarot {
+    color: #851aa6;
+    font-size: 2rem;
+    word-spacing: 0.2rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+}
+
+#derechosReservados {
+    color: #ea71ff;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+#listaTarot {
+    color: #851aa6;
+    font-size: 2rem;
+    word-spacing: 0.2rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+}
+
+footer {
+    display: flex;
+    flex-flow: row wrap;
+    flex-basis: 100%;
+    justify-content: space-between;
+    list-style: none;
+    font-size: 2rem;
+    align-items: baseline;
+    text-align: center;
+    margin: 5rem 2rem 2rem 2rem;
+    border: solid #851aa6 0.2rem;
+    border-radius: 1rem;
+}
+
+footer .secciones {
+    margin: 1rem 1rem 1rem 1rem;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+footer .secciones a {
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    text-decoration: none;
+    color: #851aa6;
+}
+
+footer .redes {
+    margin: 1rem 1rem 1rem 1rem;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+footer .redes a {
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    text-decoration: none;
+    color: #851aa6;
+}
