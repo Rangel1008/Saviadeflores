@@ -107,10 +107,6 @@
         display: block;
     }
     
-    .texto_inicio1 {
-        float: left;
-    }
-    
     #direccion {
         text-align: center;
         color: #851aa6;
@@ -127,7 +123,14 @@
         max-width: 60rem;
     }
     
-    .gridContainer {
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        background-color: rgba(0, 0, 0, 0.3);
+        border-radius: 50%;
+        border: 1px solid black;
+    }
+    
+    #gridContainer {
         display: grid;
         grid-template-columns: 1.2fr 1.2fr 1.2fr;
         grid-template-rows: 1fr;
@@ -136,7 +139,7 @@
         justify-items: center;
     }
     
-    .gridContainer .card {
+    #gridContainer #card {
         font-size: 2rem;
         color: #851aa6;
         border: 0.3rem solid #851aa6;
@@ -146,12 +149,12 @@
         transition: 0.3s;
     }
     
-    .gridContainer div p {
+    #gridContainer div p {
         text-align: center;
         font-size: 2.5rem;
     }
     
-    .gridContainer div ul {
+    #gridContainer div ul {
         font-family: 'Josefin Sans', sans-serif;
     }
     
@@ -173,11 +176,11 @@
         padding: 1.5rem 1.5rem 1.5rem 1.5rem;
     }
     
-    .card:hover {
+    #card:hover {
         box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     }
     
-    .gridContainer .card p {
+    #gridContainer #card p {
         padding: 0rem 1rem 0rem 1rem;
     }
     
@@ -204,11 +207,17 @@
         border-radius: 1rem;
         font-family: 'Josefin Sans', sans-serif;
         margin: 2rem 2rem 2rem 2rem;
-        padding: 1rem 1rem 1rem 1rem;
+        padding: 2rem 2rem 2rem 2rem;
     }
     
-    #modalContacto {
-        font-size: 2rem;
+    .formularioInput {
+        border: solid #851aa6 0.2rem;
+    }
+    
+    .formularioSubmit {
+        color: white;
+        background-color: #851aa6;
+        font-family: 'Amatic SC';
     }
     
     #comentario {
@@ -219,8 +228,13 @@
     }
     
     .titulosTarot {
-        color: #ea71ff;
+        margin: 1rem 1rem 1rem 1rem;
+        padding: 0.5rem 1rem 0.5rem 1rem;
+        color: white;
         font-size: 3rem;
+        background-color: #851aa6;
+        width: fit-content;
+        ;
     }
     
     .textosTarot {
@@ -231,6 +245,32 @@
         word-spacing: 0.2rem;
         font-family: 'Josefin Sans', sans-serif;
         font-weight: 300;
+    }
+    
+    #triggerModal {
+        font-size: 2rem;
+        background-color: #851aa6;
+    }
+    
+    .modal-header {
+        color: white;
+        background-color: #851aa6;
+    }
+    
+    .modal-title {
+        font-size: 3rem;
+        color: white;
+    }
+    
+    .modal-body {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 2rem;
+    }
+    
+    .modal-footer a {
+        font-size: 2rem;
+        color: white;
+        background-color: #851aa6;
     }
     
     #derechosReservados {
