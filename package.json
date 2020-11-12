@@ -1,0 +1,25 @@
+{
+  "name": "proyectohtml-copia",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+"build-css": "node-sass --include-path scss scss/estilo.scss estilo/estilo.css",
+"watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rangel1008/Saviadeflores.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rangel1008/Saviadeflores/issues"
+  },
+  "homepage": "https://github.com/Rangel1008/Saviadeflores#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0",
+    "nodemon": "^2.0.6"
+  }
+}
