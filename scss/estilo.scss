@@ -53,8 +53,8 @@ header {
 }
 
 #listaNav {
-    padding: 1rem 1rem 1rem 1rem;
-    margin: 0rem 0rem 0rem 0rem;
+    padding: 1rem;
+    margin: 0rem;
 }
 
 #navbar {
@@ -70,7 +70,7 @@ header {
                 transition: 0.5s;
             }
             a {
-                padding: 0rem 1rem 0rem 1rem;
+                padding: 0rem 1rem;
                 color: white;
                 text-decoration: none;
             }
@@ -88,7 +88,7 @@ h2 {
     color: $colorPrincipal;
     text-align: center;
     font-size: 4.5rem;
-    margin: 1rem 1rem 1rem 1rem;
+    margin: 1rem;
 }
 
 h3 {
@@ -104,7 +104,7 @@ h3 {
     color: $colorPrincipal;
     font-size: 2rem;
     word-spacing: 0.2rem;
-    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+    padding: 1.5rem;
     font-family: $fontSecundaria;
     font-weight: 300;
     display: flex;
@@ -158,7 +158,7 @@ h3 {
         border-radius: 1rem;
         transition: 0.3s;
         p {
-            padding: 0rem 1rem 0rem 1rem;
+            padding: 0rem 1rem;
         }
     }
     div {
@@ -181,7 +181,7 @@ hr {
 .cardIngredientes {
     list-style: none;
     text-align: left;
-    padding: 0rem 1.5rem 0rem 1.5rem;
+    padding: 0rem 1.5rem;
 }
 
 .cardBeneficios {
@@ -189,7 +189,7 @@ hr {
     background-color: $colorPrincipal;
     list-style: none;
     text-align: left;
-    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+    padding: 1.5rem;
 }
 
 #mapa {
@@ -214,8 +214,8 @@ img {
     border: solid $colorPrincipal 0.2rem;
     border-radius: 1rem;
     font-family: $fontSecundaria;
-    margin: 2rem 2rem 2rem 2rem;
-    padding: 2rem 2rem 2rem 2rem;
+    margin: 2rem;
+    padding: 2rem;
 }
 
 .formularioInput {
@@ -236,8 +236,8 @@ img {
 }
 
 .titulosTarot {
-    margin: 1rem 1rem 1rem 1rem;
-    padding: 0.5rem 1rem 0.5rem 1rem;
+    margin: 1rem;
+    padding: 0.5rem 1rem;
     color: white;
     font-size: 3rem;
     background-color: $colorPrincipal;
@@ -246,8 +246,8 @@ img {
 }
 
 .textosTarot {
-    margin: 2rem 2rem 2rem 2rem;
-    padding: 1rem 1rem 1rem 1rem;
+    margin: 2rem;
+    padding: 1rem;
     color: $colorPrincipal;
     font-size: 2rem;
     word-spacing: 0.2rem;
@@ -306,17 +306,16 @@ footer {
     font-size: 2rem;
     align-items: baseline;
     text-align: center;
-    margin: 5rem 2rem 2rem 2rem;
     border: solid $colorPrincipal 0.2rem;
     border-radius: 1rem;
 }
 
 footer {
     .secciones {
-        margin: 1rem 1rem 1rem 1rem;
-        padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+        margin: 1rem;
+        padding: 0.5rem;
         a {
-            padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+            padding: 0.5rem;
             text-decoration: none;
             color: $colorPrincipal;
         }
@@ -325,10 +324,10 @@ footer {
 
 footer {
     .redes {
-        margin: 1rem 1rem 1rem 1rem;
-        padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+        margin: 1rem;
+        padding: 0.5rem;
         a {
-            padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+            padding: 0.5rem;
             text-decoration: none;
             color: $colorPrincipal;
         }
