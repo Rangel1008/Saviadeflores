@@ -10,6 +10,7 @@ body {
     background-color: #fef6eb;
     font-weight: 400;
     width: 100%;
+    /*overflow-x: hidden*/
 }
 
 #contenedor {
@@ -35,6 +36,10 @@ header div img {
 }
 
 #navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1;
     margin: 2rem 2rem 2rem 2rem;
     justify-content: center;
     align-items: baseline;
@@ -107,6 +112,27 @@ h3 {
     display: block;
 }
 
+#imgFixed {
+    background-image: url('../imagenes/tarottest.jpg');
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#divDatos {
+    display: inline-flex;
+    flex-flow: row;
+    margin: 5rem 0rem;
+}
+
+#divForm {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
 #direccion {
     text-align: center;
     color: #851aa6;
@@ -128,6 +154,10 @@ h3 {
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 50%;
     border: 1px solid black;
+}
+
+#productos {
+    margin: 5rem 0rem 10rem 0rem;
 }
 
 #gridContainer {
@@ -180,9 +210,19 @@ hr {
     padding: 1.5rem;
 }
 
-#mapa {
-    display: block;
-    margin: auto;
+.map-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 img {
@@ -190,10 +230,11 @@ img {
     margin: auto;
 }
 
-#mainTarot {
+#divTarot {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
+    margin: 5rem 0rem;
 }
 
 #formulario {
@@ -217,10 +258,10 @@ img {
 }
 
 #comentario {
+    text-align: center;
     color: #851aa6;
     font-size: 2rem;
     font-family: "Josefin Sans", sans-serif;
-    text-align: center;
 }
 
 .titulosTarot {
